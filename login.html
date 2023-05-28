@@ -1,0 +1,51 @@
+<html>
+    <header>
+        <tilte>
+            Welcome to our page
+        </tilte>
+        <style>
+            .container {
+  display: grid;
+  grid-template-columns:50% 50% ;
+  font-family: arial, sans-serif;
+
+  
+}
+
+.box {
+  width: 50%;
+  padding: 2em;
+  color: #ffffff;
+  background-color: bisque  ;
+  min-height: 500px;
+}
+        </style>
+    </header>
+    <body>
+        <div class="container" >
+            <div class="box" syle="background:url(https://unsplash.it/800/300) center center no-repeat; background-size: cover;">
+                
+            </div>
+            <div class="box" >
+                <form action="">
+                    <label for="username">UserName</label> <br>
+                    <input id="username" name="username" type="text" minlenght="3" maxlength="10" placeholder="create a username" required><br>
+                    <label for="email">Email</label> <br>
+                    <input id="email" name="email" type="email" placeholder="create an email"  required><br>
+                    <label for="password">Password</label> <br>
+                    <input id="username" name="username" type="text" minlenght="3" maxlength="10" placeholder="password" required><br>
+                    <label for="gender" >Gender</label><br>
+                    <select id="gender" name="gender"><br><br>
+                        <option value="male">Male</option><br>
+                        <option value="female">Female</option><br>
+                    </select>
+                    <label for="phonenumber">phonenumber</label> <br>
+                    <input id="phonenumber" name="phonenumber" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="enter your phone number" required><br>
+                    <input type="submit" value="Register">
+                    
+                    
+            </form>
+            </div>
+        </dive>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <head>
+	    <title>
+		   سنتعلم فى هذا الكتاب
+		</title>
+	</head>
+    <body dir="rtl">
+        <P> سنتعلم فى هذا الكتاب </P>
+         <ul>
+            <li>html</li>
+            <li>xhtml</li>
+            <li>css</li>
+        </ul>
+    </body>
+</html>

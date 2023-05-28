@@ -1,0 +1,102 @@
+<html>
+       <head>
+	            <title> مراجعه لنموذج ارسال بيانات
+	            </title>
+				<style>
+					   input,select{
+						width:195%%;
+						padding:10px;
+						margin:10px;
+						box-sizing: border-box;
+						background-color:white;
+						border:1px solid #ccc;
+						border-radius:15px;
+					   }
+					   input[type=button]{
+						background-color:green;
+						color:white;
+						font-weight: 800;
+					   }
+					   body{
+						background-color: rgb(122, 165, 42);
+						font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+						font-size:medium;
+					   }
+					   label{
+						margin: 15px;
+						
+					   }
+					   input,select:hover{
+					    border:1px blue solid;
+					   }
+					   input,select:visited{
+						border:1px olivedrab dashed ;
+					   }
+					   input,select:focus{
+						border:1px red solid
+					   }
+					   div{
+						width:100%;
+						display:flex;
+					   }
+					   div .form-container{
+						width:50%;
+
+					   }
+					  
+				</style>
+	   </head>
+	   <body>
+
+                <div>
+                         <div class="form-container"></div>
+						 <div class="form-container">
+	            
+			    
+	                <form method="get" action="file.php">
+						<h1> personnel data</h1>
+				        <lable for="username" > username </lable> </br>
+				        <input id="username" name="username" type="text" value="username" minlenght="3" maxlenght="20" required /><br>
+				        <lable for="pass" > password </label> </br>
+						<input id="pass" type="password" name="pass" value="password" required /> </br>
+						<lable for="email" > email </lable> </br>
+						<input id="email" name="email" value="email" type="email" required /> </br>
+						<lable for=birthdate > BirthDate </lable> <br>
+						<input id="birthdate" name="birthdate" value="birthdate" type="date" required /> </br>
+						<lable for="gender"> Gender <lable/> </br>
+						<select id="gender" name="gender"><br>
+						<option value="male" selected > Male </option>
+						<option value="Female"> Female </option>
+						</select>
+						<lable for="location"> Location </lable> <br>
+						<select id="location" name="location"><br>
+						<optgroup label="Dakahlia">
+							<option value="mansoura">mansoura </option>
+							<option value="Talkha" >Talkha </option>
+					   </optgroup>
+                                <optgroup label="Garbia">
+                                     <option value="mahala">Mahalla </option>
+                                     <option value="garbia city" >Garbia city </option>
+                                </optgroup>
+                        </select>
+                        <p> choose your field </p>
+                        <input type="radio" name="field" id="network" value="network" />
+						<label for="network" >Network </label></br>
+                        <input type="radio" id="software" name="field" value="software programming" />
+                        <label for="software">Software </lable><br>
+                        <input type="radio" id="database" name="field" value="database" />
+                        <label for="database"> Database </lable></br>
+						<p> chooos your hobbies </p>
+                        <input type="checkbox" id="hobby1" name="hobby1" value="reading" />
+                        <label for="hobby1"> Reading <lable> </br>
+                        <input type="checkbox" id="hobby2" name="hobby2" value="swimming" />
+                        <label for="hobby2" > Swimming </lable> <br>
+                        <input type="checkbox" id="hobby3" name="hobby3" value="soccer" />
+                        <label for="hobby3"> Soccer </lable> </br/>
+                        <input type="button" name="okbutton" value="send" /> 						
+					</form>
+				</div>
+						 </div>
+					
+		</body>
+</html>		
